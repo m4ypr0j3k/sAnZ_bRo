@@ -1,5 +1,5 @@
 
-?>php
+?>
 function random($length)
 {
     $data = 'ABCDEFGHIJKLMNOPQRSTU1234567890';
