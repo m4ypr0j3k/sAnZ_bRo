@@ -10,6 +10,7 @@ function keygen($length=10)
    	    $key .= $inputs{mt_rand(0,70)};
 	}
 	return $key;
+echo keygen(40)
  
 // tambahkan 
 // echo keygen(40) untuk mendapatkan hasil
