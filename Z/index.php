@@ -1,17 +1,14 @@
-<?php
 
-function kataAcak()
+?>php
+function random($length)
 {
-    $kataacak = 
-    [
-        'acak 1',
-        'acak 2',
-        'acak 3'
-    ];
+    $data = 'ABCDEFGHIJKLMNOPQRSTU1234567890';
+    $string = '';
+    for($i = 0; $i < $length; $i++) {
+        $pos = rand(0, strlen($data)-1);
+        $string .= $data{$pos};
+    }
+    return $string;
+} 
 
-    return $kataacak[mt_rand(0, count($kataacak) - 1)];
-}
-
-echo kataAcak();
-
-?>
+echo random(10);
