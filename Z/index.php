@@ -1,4 +1,3 @@
-
 ?>
 function random($length)
 {
